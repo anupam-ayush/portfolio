@@ -1,0 +1,22 @@
+/* Set Inter as the default font */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-padding-top: 80px; 
+}
+
+/* ---  Fade-in on Scroll Animation --- */
+/* Initial state: hidden and slightly moved down */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Final state: visible and in original position */
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
